@@ -96,4 +96,12 @@ $ flask run
         "product": "Aluminum Can"
     }
     ```
+    
+ ### Deploy to Heroku
+ Make sure you have `heroku-toolbelt` and `heroku` accounts
+ 
+ ```commandline
+$ heroku git:remote -a <your heroku app name>
+$ git push heroku master
+```
   
