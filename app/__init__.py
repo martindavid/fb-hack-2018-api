@@ -5,7 +5,7 @@ import requests
 from flask import Flask, jsonify, request
 from flask_cors import CORS, cross_origin
 
-from .data import get_dict_data, get_suggestion_content
+from app.data import get_dict_data, get_suggestion_content
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -92,7 +92,3 @@ def vision():
                    "message": "Internal Server Error",
                    "error": e
                }, HTTPStatus.INTERNAL_SERVER_ERROR
-
-
-if __name__ == '__main__':
-    app.run(debug='True')
