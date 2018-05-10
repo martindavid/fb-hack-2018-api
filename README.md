@@ -1,6 +1,15 @@
 ## CAT 02Saver API
 
-This a backend for our hack solution for Melbourne Facebook Hackathon 2018
+This a backend for our hack solution for Melbourne Facebook Hackathon 2018 that bring us to win the second place.
+
+Build by [Gera Versfeld](https://github.com/gcversfeld)
+
+### Team:
+- [Gera Versfeld](https://github.com/gcversfeld)
+- [Martin Valentino](https://github.com/martindavid)
+- [Davis](https://github.com/davislf2)
+- [Evan](https://github.com/eexe1)
+- [Kenny Yu](https://github.com/kenny813x201)
 
 ### Getting Started
 #### Prerequisites
@@ -29,13 +38,13 @@ $ flask run
 - You can access your api from `http://localhost:5000`
 
 #### Available Route
-- POST
+- **POST**
   - Get suggestion from image
     
     [http://localhost:5000/vision](http://localhost:5000/vision)
     - You need to pass an image in the `form-body`
     
-    Example Request:
+    **Example Request**:
     ```commandline
     curl -X POST \
     http://localhost:5000/vision \
@@ -46,7 +55,7 @@ $ flask run
     -F 'image=@<folder>\test_image.jpg'
     ```
     
-    Example Response:
+    **Example Response**:
     ```json
     {
     "caption": "a glass of beer",
