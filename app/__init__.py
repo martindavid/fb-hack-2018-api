@@ -23,7 +23,7 @@ def vision():
     try:
         data = request.files['image']
 
-        subscription_key = 'a00ae1f36d324283b8f1de56ca7a2c60'
+        subscription_key = '59c59d6ad45f4026b73c6085b8119e64'
         assert subscription_key
 
         vision_base_url = "https://westcentralus.api.cognitive.microsoft.com/vision/v1.0/"
@@ -82,6 +82,7 @@ def vision():
         if 'beverage' in image_caption:
             thing = 'Wine Bottle'
 
+        
         return jsonify({
             'caption': image_caption,
             'product': thing,
